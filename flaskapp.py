@@ -59,7 +59,7 @@ def about_page():
 
 
 @app.route('/link', methods=('GET', 'POST'))
-def link():
+def link():# comment
     if request.method == 'POST':
         if request.form['action'] == 'Upload Image':
             img = request.files['my_image']
